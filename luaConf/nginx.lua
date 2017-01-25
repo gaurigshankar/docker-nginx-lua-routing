@@ -21,11 +21,7 @@
   ngx.say('<b> limelight LUA Routing Rules </b>');
   return
   end
-  if requestUrl == "/geetha" then
-  ngx.header["Content-type"] = "text/html"
-  ngx.say('<b> Gauri LUA Routing Rules </b>');
-  return
-  end
+ 
   match = ngx.re.match(requestUrlModified, reItemPage)
    --if req_headers["x-gauri-header"] then
   if match then
